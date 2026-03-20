@@ -886,7 +886,7 @@ img {
   font-weight: 600;
   line-height: 1.3;
   text-indent: 230px;
-  text-align: justify;
+  text-align: end;
 }
 .nicolas_sm_about .extra_container {
   margin-bottom: 120px;
