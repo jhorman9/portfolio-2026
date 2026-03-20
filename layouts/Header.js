@@ -88,7 +88,7 @@ const Header = () => {
             </div>
             <div className="button">
               <Link href="contact">
-                Let's talk <img src="img/header/arrow.png" alt="arrow" />
+                Let's talk <img src="img/header/arrow.webp" alt="arrow" />
               </Link>
             </div>
           </div>
@@ -175,7 +175,7 @@ export const OnePageHeader = () => {
             </div>
             <div className="button">
               <Link href="contact">
-                Let's talk <img src="img/header/arrow.png" alt="arrow" />
+                Let's talk <img src="img/header/arrow.webp" alt="arrow" />
               </Link>
             </div>
           </div>
