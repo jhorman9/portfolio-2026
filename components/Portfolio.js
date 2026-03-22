@@ -49,7 +49,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/1.jpg" alt={1} />
+                    <img src="img/portfolio/azumi-ecommerce.jpg" alt="Ecommerce AzumiPTY" />
                     <Link
                       className="nicolas_sm_full_link"
                       href="portfolio_single"
@@ -57,10 +57,10 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <a href="#">// Product design</a>
+                      <a href="#">// Wordpress Development</a>
                       <h3>
                         <Link href="portfolio_single">
-                          Mobile application design
+                          Ecommerce AzumiPTY
                         </Link>
                       </h3>
                     </div>
@@ -69,7 +69,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt="Down Arrow"
                         />
                       </Link>
                     </div>
@@ -79,7 +79,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/2.jpg" alt={2} />
+                    <img src="img/portfolio/utah-mechanical-school.jpg" alt="Ecommerce Utah Mechanical School" />
                     <Link
                       className="nicolas_sm_full_link"
                       href="portfolio_single"
@@ -87,10 +87,10 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <a href="#">// Creative graphic design</a>
+                      <a href="#">// Wordpress Development</a>
                       <h3>
                         <Link href="portfolio_single">
-                          Marketing site design and build
+                          Ecommerce Utah Mechanical School
                         </Link>
                       </h3>
                     </div>
@@ -99,7 +99,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt="Down Arrow"
                         />
                       </Link>
                     </div>
@@ -109,7 +109,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/3.jpg" alt={3} />
+                    <img src="img/portfolio/aikikaird.jpg" alt="Aikikaird" />
                     <Link
                       className="nicolas_sm_full_link"
                       href="portfolio_single"
@@ -117,10 +117,10 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <a href="#">// Design &amp; branding</a>
+                      <a href="#">// Wordpress Development</a>
                       <h3>
                         <Link href="portfolio_single">
-                          Creative Graphics Design
+                          Aikikaird
                         </Link>
                       </h3>
                     </div>
@@ -129,7 +129,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt="Down Arrow"
                         />
                       </Link>
                     </div>
@@ -139,7 +139,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/4.jpg" alt={4} />
+                    <img src="img/portfolio/cocolpan.jpg" alt="Cocolpan" />
                     <Link
                       className="nicolas_sm_full_link"
                       href="portfolio_single"
@@ -147,10 +147,10 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <a href="#">// Product design</a>
+                      <a href="#">// HTML, CSS, JAVASCRIPT Y PHP</a>
                       <h3>
                         <Link href="portfolio_single">
-                          Brand Identity &amp; Motion Design
+                          Cocolpan
                         </Link>
                       </h3>
                     </div>
@@ -159,7 +159,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt="Down Arrow"
                         />
                       </Link>
                     </div>
@@ -169,7 +169,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/5.jpg" alt={5} />
+                    <img src="img/portfolio/elevideo.jpg" alt="Elevideo" />
                     <Link
                       className="nicolas_sm_full_link"
                       href="portfolio_single"
@@ -177,10 +177,10 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <a href="#">// Product design</a>
+                      <a href="#">// ReactJS &amp; Typescript</a>
                       <h3>
                         <Link href="portfolio_single">
-                          Marketing site design and build
+                          Elevideo
                         </Link>
                       </h3>
                     </div>
@@ -189,7 +189,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt="Down Arrow"
                         />
                       </Link>
                     </div>
@@ -199,7 +199,7 @@ const Portfolio = ({ noTitle = false }) => {
               <li>
                 <div className="list_inner">
                   <div className="image">
-                    <img src="img/portfolio/6.jpg" alt={6} />
+                    <img src="img/portfolio/azumi-menu-digital.jpg" alt="Azumi Menu Digital" />
                     <Link
                       className="nicolas_sm_full_link"
                       href="portfolio_single"
@@ -207,10 +207,10 @@ const Portfolio = ({ noTitle = false }) => {
                   </div>
                   <div className="title_holder">
                     <div className="left">
-                      <a href="#">// Graphic design</a>
+                      <a href="#">// ReactJS</a>
                       <h3>
                         <Link href="portfolio_single">
-                          Paper &amp; Book Covers Design
+                          Azumi Menu Digital
                         </Link>
                       </h3>
                     </div>
@@ -219,7 +219,7 @@ const Portfolio = ({ noTitle = false }) => {
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
-                          alt={1}
+                          alt="Down Arrow"
                         />
                       </Link>
                     </div>
