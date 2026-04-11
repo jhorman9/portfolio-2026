@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
+import { portfolioData } from "@/data/portfolioData";
 
-const Portfolio = ({ noTitle = false }) => {
+const Portfolio = ({ noTitle = false, limit = null }) => {
+  // Si se especifica un límite, mostrar solo esa cantidad de proyectos
+  const projects = limit ? portfolioData.slice(0, limit) : portfolioData;
+
   return (
     <div className="nicolas_sm_section" id="portfolio">
       <div className="nicolas_sm_portfolio">
@@ -46,186 +50,38 @@ const Portfolio = ({ noTitle = false }) => {
         <div className="container">
           <div className="portfolio_in">
             <ul>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/azumi-ecommerce.jpg" alt="Ecommerce AzumiPTY" />
-                    <Link
-                      className="nicolas_sm_full_link"
-                      href="portfolio_single"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <a href="#">// Wordpress Development</a>
-                      <h3>
-                        <Link href="portfolio_single">
-                          Ecommerce AzumiPTY
+              {projects.map((project) => (
+                <li key={project.id}>
+                  <div className="list_inner">
+                    <div className="image">
+                      <img src={project.image} alt={project.title} />
+                      <Link
+                        className="nicolas_sm_full_link"
+                        href={`/portfolio/${project.slug}`}
+                      />
+                    </div>
+                    <div className="title_holder">
+                      <div className="left">
+                        <a href="#">// {project.category}</a>
+                        <h3>
+                          <Link href={`/portfolio/${project.slug}`}>
+                            {project.title}
+                          </Link>
+                        </h3>
+                      </div>
+                      <div className="right">
+                        <Link href={`/portfolio/${project.slug}`}>
+                          <img
+                            className="sm_svg"
+                            src="img/svg/down_arrow.svg"
+                            alt="Down Arrow"
+                          />
                         </Link>
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="portfolio_single">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt="Down Arrow"
-                        />
-                      </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/utah-mechanical-school.jpg" alt="Ecommerce Utah Mechanical School" />
-                    <Link
-                      className="nicolas_sm_full_link"
-                      href="portfolio_single"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <a href="#">// Wordpress Development</a>
-                      <h3>
-                        <Link href="portfolio_single">
-                          Ecommerce Utah Mechanical School
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="portfolio_single">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt="Down Arrow"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/aikikaird.jpg" alt="Aikikaird" />
-                    <Link
-                      className="nicolas_sm_full_link"
-                      href="portfolio_single"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <a href="#">// Wordpress Development</a>
-                      <h3>
-                        <Link href="portfolio_single">
-                          Aikikaird
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="portfolio_single">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt="Down Arrow"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/cocolpan.jpg" alt="Cocolpan" />
-                    <Link
-                      className="nicolas_sm_full_link"
-                      href="portfolio_single"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <a href="#">// HTML, CSS, JAVASCRIPT Y PHP</a>
-                      <h3>
-                        <Link href="portfolio_single">
-                          Cocolpan
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="portfolio_single">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt="Down Arrow"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/elevideo.jpg" alt="Elevideo" />
-                    <Link
-                      className="nicolas_sm_full_link"
-                      href="portfolio_single"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <a href="#">// ReactJS &amp; Typescript</a>
-                      <h3>
-                        <Link href="portfolio_single">
-                          Elevideo
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="portfolio_single">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt="Down Arrow"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="image">
-                    <img src="img/portfolio/azumi-menu-digital.jpg" alt="Azumi Menu Digital" />
-                    <Link
-                      className="nicolas_sm_full_link"
-                      href="portfolio_single"
-                    />
-                  </div>
-                  <div className="title_holder">
-                    <div className="left">
-                      <a href="#">// ReactJS</a>
-                      <h3>
-                        <Link href="portfolio_single">
-                          Azumi Menu Digital
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="right">
-                      <Link href="portfolio_single">
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt="Down Arrow"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

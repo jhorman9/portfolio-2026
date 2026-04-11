@@ -13,15 +13,15 @@ export const nicolasUtility = {
           let svg = xmlDoc.querySelector("svg");
 
           if (typeof imgID !== "undefined") {
-            svg.setAttribute("id", imgID);
+            svg?.setAttribute("id", imgID);
           }
 
           if (typeof imgClass !== "undefined") {
-            svg.setAttribute("class", imgClass + " replaced-svg");
+            svg?.setAttribute("class", imgClass + " replaced-svg");
           }
 
-          svg.removeAttribute("xmlns:a");
-          if (el.parentNode) {
+          svg?.removeAttribute("xmlns:a");
+          if (!el.parentNode) {
             el.parentNode.replaceChild(svg, el);
           }
         });

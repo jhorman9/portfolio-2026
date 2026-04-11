@@ -3,8 +3,10 @@ import Portfolio from "@/components/Portfolio";
 import WorkingProcess from "@/components/WorkingProcess";
 import NikolasLayout from "@/layouts/NikolasLayout";
 import { sliderProps } from "@/utility/sliderProps";
+import { portfolioData } from "@/data/portfolioData";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 const page = () => {
   return (
     <NikolasLayout>
@@ -33,159 +35,25 @@ const page = () => {
             className="swiper-container"
           >
             <div className="swiper-wrapper">
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/slider/1.jpg" alt={1} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
+              {portfolioData.map((project) => (
+                <SwiperSlide key={project.id} className="swiper-slide">
+                  <div className="list_inner">
+                    <img src={project.image} alt={project.title} />
+                    <div className="details">
+                      <div className="category">
+                        <span>{project.category}</span>
+                      </div>
+                      <div className="title">
+                        <h3>{project.title}</h3>
+                      </div>
                     </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
+                    <Link
+                      className="nicolas_sm_full_link"
+                      href={`/portfolio/${project.slug}`}
+                    />
                   </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/slider/2.jpg" alt={2} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/slider/3.jpg" alt={3} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/slider/4.jpg" alt={4} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/portfolio/1.jpg" alt={1} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/portfolio/2.jpg" alt={2} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/portfolio/3.jpg" alt={3} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/portfolio/4.jpg" alt={4} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide">
-                <div className="list_inner">
-                  <img src="img/portfolio/5.jpg" alt={5} />
-                  <div className="details">
-                    <div className="category">
-                      <span>Designing</span>
-                    </div>
-                    <div className="title">
-                      <h3>UI/UX Design Mockup</h3>
-                    </div>
-                  </div>
-                  <Link
-                    className="nicolas_sm_full_link"
-                    href="portfolio_single"
-                  />
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
             </div>
           </Swiper>
         </div>

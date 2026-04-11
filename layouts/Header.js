@@ -28,7 +28,7 @@ const Header = () => {
           <div className="mobile_in">
             <div className="logo">
               <a href="#">
-                <img src="img/logo/logo.png" alt="" />
+                <img src="/img/logo/logo.png" alt="" />
               </a>
             </div>
             <div className="trigger" onClick={() => setToggle(!toggle)}>
@@ -63,7 +63,7 @@ const Header = () => {
           <div className="overlay_content">
             <div className="logo">
               <Link href="/">
-                <img src="img/logo/logo.png" alt={2} />
+                <img src="/img/logo/logo.png" alt={2} />
               </Link>
             </div>
             <div className="menu">
@@ -88,7 +88,7 @@ const Header = () => {
             </div>
             <div className="button">
               <Link href="contact">
-                Let's talk <img src="img/header/arrow.webp" alt="arrow" />
+                Contáctame <img src="img/header/arrow.webp" alt="arrow" />
               </Link>
             </div>
           </div>
@@ -126,7 +126,7 @@ export const OnePageHeader = () => {
           <div className="mobile_in">
             <div className="logo">
               <a href="#">
-                <img src="img/logo/logo.png" alt="" />
+                <img src="/img/logo/logo.png" alt="" />
               </a>
             </div>
             <div className="trigger" onClick={() => setToggle(!toggle)}>
@@ -161,7 +161,7 @@ export const OnePageHeader = () => {
           <div className="overlay_content">
             <div className="logo">
               <Link href="/">
-                <img src="img/logo/logo.png" alt={2} />
+                <img src="/img/logo/logo.png" alt={2} />
               </Link>
             </div>
             <div className="menu">
@@ -175,7 +175,7 @@ export const OnePageHeader = () => {
             </div>
             <div className="button">
               <Link href="contact">
-                Let's talk <img src="img/header/arrow.webp" alt="arrow" />
+                Contáctame <img src="img/header/arrow.webp" alt="arrow" />
               </Link>
             </div>
           </div>

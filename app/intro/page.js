@@ -21,7 +21,7 @@ const page = () => {
       </div>
       <div className="nicolas_sm_intro">
         <div className="logo">
-          <img src="img/logo/logo.png" alt="" />
+          <img src="/img/logo/logo.png" alt="" />
           <p>Personal Portfolio React Nextjs Template</p>
         </div>
         <div className="demos">
