@@ -1077,6 +1077,9 @@ img {
 .nicolas_sm_extra_title .title {
   display: flex;
 }
+.rfm-marquee-container {
+  overflow: hidden;
+}
 .nicolas_sm_extra_title .wrap {
   display: flex;
   flex-wrap: nowrap;

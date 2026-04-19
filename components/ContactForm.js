@@ -86,37 +86,37 @@ const ContactForm = () => {
         id="empty-form"
         style={{ display: error ? "block" : "none" }}
       >
-        <p>Please Fill Required Fields</p>
+        <p>Por favor, complete los campos requeridos.</p>
       </div>
       <div className="error_box" id="subject-alert">
-        <p>Please Select Subject</p>
+        <p>Por favor, seleccione un asunto.</p>
       </div>
       <div
         className="error_box"
         id="security-alert"
         style={{ display: codeError ? "block" : "none" }}
       >
-        <p>Security code does not match !</p>
+        <p>El código de seguridad no coincide.</p>
       </div>
       <div className="error_box" id="email-invalid">
-        <p>Please enter a valid email address. Exp. example@gmail.com</p>
+        <p>Por favor, ingrese una dirección de correo electrónico válida. Ej. ejemplo@gmail.com</p>
       </div>
       <div className="error_box" id="phone-invalid">
-        <p>Please enter a valid phone number.Exp. +998991774433</p>
+        <p>Por favor, ingrese un número de teléfono válido. Ej. +998991774433</p>
       </div>
       <div className="error_box" id="error_mail">
         <p />
       </div>
       <div className="success_box" id="success_mail">
         <p>
-          Your message has been sent. We will contact you as soon as possible.
+          Su mensaje ha sido enviado. Nos pondremos en contacto con usted lo antes posible.
         </p>
       </div>
       <ul>
         <li className={fieldError && name.length === 0 ? "error" : ""}>
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Nombre"
             name="name"
             onChange={(e) => onChange(e)}
             value={name}
@@ -127,7 +127,7 @@ const ContactForm = () => {
         <li className={fieldError && email.length === 0 ? "error" : ""}>
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Correo electrónico"
             name="email"
             onChange={(e) => onChange(e)}
             value={email}
@@ -138,7 +138,7 @@ const ContactForm = () => {
         <li className={fieldError && subject.length === 0 ? "error" : ""}>
           <input
             type="text"
-            placeholder="Subject"
+            placeholder="Asunto"
             name="subject"
             onChange={(e) => onChange(e)}
             value={subject}
@@ -149,7 +149,7 @@ const ContactForm = () => {
         <li className={fieldError && phone.length === 0 ? "error" : ""}>
           <input
             type="number"
-            placeholder="Phone"
+            placeholder="Teléfono"
             name="phone"
             onChange={(e) => onChange(e)}
             value={phone}
@@ -162,7 +162,7 @@ const ContactForm = () => {
           className={fieldError && message.length === 0 ? "error" : ""}
         >
           <textarea
-            placeholder="Message"
+            placeholder="Escribe tu mensaje"
             name="message"
             onChange={(e) => onChange(e)}
             value={message}
@@ -181,7 +181,7 @@ const ContactForm = () => {
             name="contact_question"
             id="txtInput"
             autoComplete="off"
-            placeholder="Please Enter Code *"
+            placeholder="Por favor, ingrese el código *"
             value={codeValue}
             onChange={(e) => setCodeValue(e.target.value)}
           />
@@ -190,7 +190,7 @@ const ContactForm = () => {
       </ul>
       <div className="nicolas_sm_button">
         <button id="send_message" onSubmit={(e) => onSubmit(e)}>
-          Submit <img src="img/header/arrow.webp" alt="arrow" />
+          Enviar <img src="img/header/arrow.webp" alt="arrow" />
         </button>
       </div>
     </form>

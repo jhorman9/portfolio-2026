@@ -1,20 +1,20 @@
 const Copyright = () => {
   return (
     <div className="nicolas_sm_section">
-      <div className="nicolas_sm_copyright">
+      {/* <div className="nicolas_sm_copyright">
         <div className="container">
           <div className="extra_container">
             <div className="copyright_in">
               <div className="left">
                 <p>
                   <img className="sm_svg" src="img/svg/copyright.svg" alt={1} />{" "}
-                  {new Date().getFullYear()} - All Rights Reserved Nicolas
+                  {new Date().getFullYear()} - Todos los derechos reservados Nicolas
                 </p>
               </div>
               <div className="right">
-                <a href="#">Terms &amp; Condition </a>
+                <a href="#">Términos y Condiciones </a>
                 <span>/ </span>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Política de Privacidad</a>
               </div>
             </div>
             <div className="nicolas_sm_totop">
@@ -23,7 +23,7 @@ const Copyright = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -25,16 +25,16 @@ const page = () => {
       <Portfolio />
       {/* /Portfolio */}
       {/* Testimonials */}
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
       {/* /Testimonials */}
       {/* Partners */}
-      <Partners />
+      {/* <Partners /> */}
       {/* /Partners */}
       {/* Pricing */}
-      <Pricing />
+      {/* <Pricing /> */}
       {/* /Pricing */}
       {/* Blog */}
-      <Blog />
+      {/* <Blog /> */}
       {/* /Blog */}
     </NikolasLayout>
   );

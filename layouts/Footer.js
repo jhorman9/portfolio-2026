@@ -10,34 +10,31 @@ const Footer = () => {
               <div className="left">
                 <div className="title">
                   <h3>
-                    <span>
-                      Feel free to reach out to me. I'm always open to discuss
-                      new projects
-                    </span>
+                    <span>¿Necesitas un proyecto? Hablemos de tu idea y hagámosla realidad juntos. Estoy aquí para ayudarte a construir algo grande.</span>
                   </h3>
                 </div>
                 <div className="contact">
                   <ul>
                     <li>
                       <div>
-                        <span>Stay up to date</span>
+                        <span>Contáctame</span>
                       </div>
-                      <a href="#">(+053) 625 08 09 62</a>
-                      <a href="#">kevincontact@gmail.com</a>
+                      <a href="tel:+50765961547">(+507) 6596-1547</a>
+                      <a href="mailto:softwaredeveloper@jhorman.com">softwaredeveloper@jhorman.com</a>
                     </li>
                     <li>
                       <div>
-                        <span>Address</span>
+                        <span>Dirección</span>
                       </div>
-                      <p>223 Thatcher Road St, Brooklyn,</p>
-                      <p>Manhattan, NY 10463</p>
+                      <p>Panamá</p>
+                      <p>Ciudad de Panamá, Punta Paitilla</p>
                     </li>
                   </ul>
                 </div>
                 <div className="social_button">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/Jhorman1D" target="_blank" rel="noopener noreferrer">
                         <span>Facebook</span>
                         <img
                           className="sm_svg"
@@ -47,7 +44,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/jhormandev" target="_blank" rel="noopener noreferrer">
                         <span>Linkedin</span>
                         <img
                           className="sm_svg"
@@ -57,8 +54,8 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <span>Behance</span>
+                      <a href="https://github.com/jhorman9/" target="_blank" rel="noopener noreferrer">
+                        <span>Github</span>
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"
@@ -67,8 +64,8 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <span>Dribbble</span>
+                      <a href="https://wa.me/50765961547" target="_blank" rel="noopener noreferrer">
+                        <span>WhatsApp</span>
                         <img
                           className="sm_svg"
                           src="img/svg/down_arrow.svg"

@@ -13,36 +13,36 @@ const Portfolio = ({ noTitle = false, limit = null }) => {
           {!noTitle && (
             <div className="container">
               <div className="projects">
-                <span>04 // let me show you</span>
-                <Link href="portfolio">(( project all ))</Link>
+                <span>04 // Mis proyectos</span>
+                <Link href="portfolio">(( todos los proyectos ))</Link>
               </div>
             </div>
           )}
           <Marquee className="title marquee">
             <div className="wrap">
               <div>
-                <h3>Work</h3>
+                <h3>Trabajos</h3>
               </div>
               <div>
-                <h3 className="stroke_text_bolder">Work</h3>
+                <h3 className="stroke_text_bolder">Trabajos</h3>
               </div>
               <div>
-                <h3>Work</h3>
+                <h3>Trabajos</h3>
               </div>
               <div>
-                <h3 className="stroke_text_bolder">Work</h3>
+                <h3 className="stroke_text_bolder">Trabajos</h3>
               </div>
               <div>
-                <h3>Work</h3>
+                <h3>Trabajos</h3>
               </div>
               <div>
-                <h3 className="stroke_text_bolder">Work</h3>
+                <h3 className="stroke_text_bolder">Trabajos</h3>
               </div>
               <div>
-                <h3>Work</h3>
+                <h3>Trabajos</h3>
               </div>
               <div>
-                <h3 className="stroke_text_bolder">Work</h3>
+                <h3 className="stroke_text_bolder">Trabajos</h3>
               </div>
             </div>
           </Marquee>

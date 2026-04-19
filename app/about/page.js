@@ -9,21 +9,21 @@ const page = () => {
   return (
     <NikolasLayout>
       {/* Page_title */}
-      <div className="nicolas_sm_page_title">
+      <div className="nicolas_sm_page_title" style={{marginBottom: "20px"}}>
         <div className="container">
           <div className="page_title_in">
             <h3>
-              <span className="stroke_text">Say hi from </span>
-              <span className="underline">Nicolas, webflow </span>
-              <span className="stroke_text">designer </span>and web{" "}
-              <span className="underline">developer</span>
+              <span className="stroke_text">Hola mi nombre es </span>
+              <span className="underline">Jhorman </span>
+              <span className="stroke_text">Desarrollador WEB </span>{" "}
+              <span className="underline">full-stack</span>
             </h3>
           </div>
         </div>
       </div>
       {/* /Page_title */}
       {/* About_video */}
-      <div className="nicolas_sm_about_video">
+      {/* <div className="nicolas_sm_about_video">
         <div className="container">
           <div className="extra_container">
             <div className="video_box">
@@ -37,7 +37,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* /About_video */}
       {/* About_me */}
       <About sectionTitle="ABOUT ME" nextSection="counter" />
@@ -56,15 +56,15 @@ const page = () => {
                         <img src="img/about/1.png" alt={1} />
                       </div>
                       <div className="title">
-                        <span>UI / UX Design</span>
+                        <span>React / TypeScript</span>
                         <h3>
                           <span
                             className="sm_counter"
                             data-from={0}
-                            data-to={95}
+                            data-to={96}
                             data-speed={1500}
                           >
-                            <Counter end={95} />
+                            <Counter end={96} />
                           </span>
                           %
                         </h3>
@@ -80,15 +80,15 @@ const page = () => {
                         <img src="img/about/2.png" alt={2} />
                       </div>
                       <div className="title">
-                        <span>Development</span>
+                        <span>React Native</span>
                         <h3>
                           <span
                             className="sm_counter"
                             data-from={0}
-                            data-to={90}
+                            data-to={87}
                             data-speed={1500}
                           >
-                            <Counter end={90} />
+                            <Counter end={87} />
                           </span>
                           %
                         </h3>
@@ -104,15 +104,15 @@ const page = () => {
                         <img src="img/about/3.png" alt={3} />
                       </div>
                       <div className="title">
-                        <span>Graphic Design</span>
+                        <span>CSS</span>
                         <h3>
                           <span
                             className="sm_counter"
                             data-from={0}
-                            data-to={80}
+                            data-to={94}
                             data-speed={1500}
                           >
-                            <Counter end={80} />
+                            <Counter end={94} />
                           </span>
                           %
                         </h3>
@@ -133,10 +133,10 @@ const page = () => {
                           <span
                             className="sm_counter"
                             data-from={0}
-                            data-to={95}
+                            data-to={92}
                             data-speed={1500}
                           >
-                            <Counter end={95} />
+                            <Counter end={92} />
                           </span>
                           %
                         </h3>

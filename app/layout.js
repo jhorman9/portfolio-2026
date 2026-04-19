@@ -8,6 +8,7 @@ export const metadata = {
   description: "Desarrollador Frontend especializado en React, creando interfaces de usuario atractivas y funcionales. Con experiencia en diseño web, desarrollo de aplicaciones móviles y UI/UX. Apasionado por mejorar habilidades y conocimientos en el desarrollo web.",
   keywords: [
     "Jhorman Nieto P",
+    "Jhorman Nieto",
     "Frontend Developer",
     "React Developer",
     "Desarrollador Frontend",
