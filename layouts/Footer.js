@@ -26,8 +26,8 @@ const Footer = () => {
                       <div>
                         <span>Dirección</span>
                       </div>
-                      <p>Panamá</p>
-                      <p>Ciudad de Panamá, Punta Paitilla</p>
+                      <p>Panamá, Ciudad de Panamá</p>
+                      <p>Punta Paitilla, Calle H Ramón Jurado.</p>
                     </li>
                   </ul>
                 </div>
@@ -38,7 +38,7 @@ const Footer = () => {
                         <span>Facebook</span>
                         <img
                           className="sm_svg"
-                          src="img/svg/down_arrow.svg"
+                          src="/img/svg/down_arrow.svg"
                           alt={1}
                         />
                       </a>
@@ -48,7 +48,7 @@ const Footer = () => {
                         <span>Linkedin</span>
                         <img
                           className="sm_svg"
-                          src="img/svg/down_arrow.svg"
+                          src="/img/svg/down_arrow.svg"
                           alt={1}
                         />
                       </a>
@@ -58,7 +58,7 @@ const Footer = () => {
                         <span>Github</span>
                         <img
                           className="sm_svg"
-                          src="img/svg/down_arrow.svg"
+                          src="/img/svg/down_arrow.svg"
                           alt={1}
                         />
                       </a>
@@ -68,7 +68,7 @@ const Footer = () => {
                         <span>WhatsApp</span>
                         <img
                           className="sm_svg"
-                          src="img/svg/down_arrow.svg"
+                          src="/img/svg/down_arrow.svg"
                           alt={1}
                         />
                       </a>

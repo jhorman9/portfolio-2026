@@ -12,12 +12,12 @@ const Header = () => {
   const pathName = usePathname();
 
   const menus = [
-    { id: 1, title: "home", href: "/" },
-    { id: 2, title: "about", href: "about" },
-    { id: 3, title: "service", href: "service" },
-    { id: 4, title: "portfolio", href: "portfolio" },
-    { id: 5, title: "blog", href: "blog" },
-    { id: 6, title: "contact", href: "contact" },
+    { id: 1, title: "Inicio", href: "/" },
+    { id: 2, title: "Acerca de Mí", href: "about" },
+    { id: 3, title: "Servicios", href: "service" },
+    { id: 4, title: "Portafolio", href: "portfolio" },
+    { id: 5, title: "Blog", href: "blog" },
+    { id: 6, title: "Contacto", href: "contact" },
   ];
 
   return (
@@ -88,7 +88,7 @@ const Header = () => {
             </div>
             <div className="button">
               <Link href="contact">
-                Contáctame <img src="img/header/arrow.webp" alt="arrow" />
+                Contáctame <img src="/img/header/arrow.webp" alt="arrow" />
               </Link>
             </div>
           </div>
@@ -110,12 +110,12 @@ export const OnePageHeader = () => {
   const pathName = usePathname();
 
   const menus = [
-    { id: 1, title: "home", href: "#home" },
-    { id: 2, title: "about", href: "#about" },
-    { id: 3, title: "service", href: "#service" },
-    { id: 4, title: "portfolio", href: "#portfolio" },
-    { id: 4, title: "Blog", href: "#blog" },
-    { id: 5, title: "contact", href: "#contact" },
+    { id: 1, title: "Inicio", href: "#home" },
+    { id: 2, title: "Acerca de", href: "#about" },
+    { id: 3, title: "Servicios", href: "#service" },
+    { id: 4, title: "Portafolio", href: "#portfolio" },
+    { id: 5, title: "Blog", href: "#blog" },
+    { id: 6, title: "Contacto", href: "#contact" },
   ];
 
   return (
@@ -175,7 +175,7 @@ export const OnePageHeader = () => {
             </div>
             <div className="button">
               <Link href="contact">
-                Contáctame <img src="img/header/arrow.webp" alt="arrow" />
+                Contáctame <img src="/img/header/arrow.webp" alt="arrow" />
               </Link>
             </div>
           </div>

@@ -42,7 +42,7 @@ const PortfolioSinglePage = ({ params }) => {
                       alt="Down Arrow"
                     />
                   </a>
-                  <img src={`/${project.image}`} alt={project.title} />
+                  <img className="image-contain" src={`/${project.image}`} alt={project.title} />
                 </div>
                 <div className="single_list">
                   <ul>
@@ -123,7 +123,7 @@ const PortfolioSinglePage = ({ params }) => {
                       <h4>Características principales:</h4>
                       <ul style={{ listStyle: 'disc', paddingLeft: '2rem' }}>
                         {project.features.map((feature, index) => (
-                          <li key={index}>{feature}</li>
+                          <li className="feature-item" key={index}>{feature}</li>
                         ))}
                       </ul>
                     </div>
@@ -134,7 +134,7 @@ const PortfolioSinglePage = ({ params }) => {
                       <h4>Tecnologías utilizadas:</h4>
                       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
                         {project.technologies.map((tech, index) => (
-                          <span 
+                          <span className="technology-item"
                             key={index} 
                             style={{ 
                               padding: '0.5rem 1rem', 

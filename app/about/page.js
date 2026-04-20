@@ -40,7 +40,7 @@ const page = () => {
       </div> */}
       {/* /About_video */}
       {/* About_me */}
-      <About sectionTitle="ABOUT ME" nextSection="counter" />
+      <About sectionTitle="SOBRE MÍ" nextSection="counter" />
       {/* /About_me */}
       {/* Counter */}
       <div className="nicolas_sm_counter" id="counter">
@@ -155,17 +155,18 @@ const page = () => {
         <div className="container">
           <div className="nicolas_sm_main_title">
             <div className="left">
-              <span>// My experience</span>
+              <span>// Mi experiencia</span>
             </div>
             <div className="center">
               <p>
-                We believe in the transformative power of digital experiences.
-                We craft websites and digital products that elevate your online
-                presence but also drive real business value.
+              Desarrollo aplicaciones frontend escalables, mantenibles y enfocadas en 
+              generar valor real para el negocio. Trabajo con React, TypeScript y una 
+              arquitectura sólida para construir productos digitales reutilizables, 
+              eficientes y preparados para crecer.
               </p>
             </div>
             <div className="right">
-              <Link href="portfolio">(( Projects all ))</Link>
+              <Link href="portfolio">(( Todos los proyectos ))</Link>
             </div>
           </div>
         </div>
@@ -174,57 +175,46 @@ const page = () => {
             <div className="experience_in">
               <div className="list_inner">
                 <div className="left">
-                  <p>Designflow Studio</p>
+                  <p>Web Studio Panamá</p>
                 </div>
                 <div className="center">
-                  <p>Design, motion, 3D, art direction</p>
+                  <p>Full Stack Developer</p>
                 </div>
                 <div className="right">
-                  <span>2023 - Present</span>
+                  <span>2026 Marzo - Presente</span>
                 </div>
               </div>
               <div className="list_inner">
                 <div className="left">
-                  <p>Moment Factory</p>
+                  <p>Alaz</p>
                 </div>
                 <div className="center">
-                  <p>Senior UI/UX Designer</p>
+                  <p>Frontend Developer</p>
                 </div>
                 <div className="right">
-                  <span>2019 - 2022</span>
+                  <span>2025 Febrero - 2026 Enero</span>
                 </div>
               </div>
               <div className="list_inner">
                 <div className="left">
-                  <p>Brunodee Agency</p>
+                  <p>Web Studio Panamá</p>
                 </div>
                 <div className="center">
-                  <p>Framer Designer &amp; Developer</p>
+                  <p>Front-End Developer</p>
                 </div>
                 <div className="right">
-                  <span>2017 - 2018</span>
+                  <span>2022 Enero - 2025 Febrero</span>
                 </div>
               </div>
               <div className="list_inner">
                 <div className="left">
-                  <p>Envato Market</p>
+                  <p>Target Marketing</p>
                 </div>
                 <div className="center">
-                  <p>Front-End WordPress Developer</p>
+                  <p>Front-End WordPress</p>
                 </div>
                 <div className="right">
-                  <span>2016 - 2017</span>
-                </div>
-              </div>
-              <div className="list_inner">
-                <div className="left">
-                  <p>Designflow Studio</p>
-                </div>
-                <div className="center">
-                  <p>Webflow Developer &amp; Co-Founder</p>
-                </div>
-                <div className="right">
-                  <span>2015 - 2016</span>
+                  <span>2020 Junio - 2022 Enero</span>
                 </div>
               </div>
             </div>
@@ -235,7 +225,7 @@ const page = () => {
       {/* Awards */}
       <div className="nicolas_sm_awards">
         <div className="nicolas_sm_extra_title">
-          <MarqueeTitle marqueeText="Awwwards" />
+          <MarqueeTitle marqueeText="Certificados" />
         </div>
         <div className="container">
           <div className="extra_container">

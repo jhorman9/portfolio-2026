@@ -181,7 +181,7 @@ const page = () => {
                   />
                   <div className="button">
                     <a href="#">
-                      Post Comment <img src="img/header/arrow.webp" alt={1} />
+                      Post Comment <img src="/img/header/arrow.webp" alt={1} />
                     </a>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ const page = () => {
                   <input type="text" placeholder="Search" />
                   {/* <input type="submit" defaultValue="" /> */}
                   <button className="search_btn">
-                    <img className="sm_svg" src="img/svg/search.svg" alt={1} />
+                    <img className="sm_svg" src="/img/svg/search.svg" alt={1} />
                   </button>
                 </div>
                 <div className="categories">

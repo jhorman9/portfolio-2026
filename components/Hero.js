@@ -48,15 +48,18 @@ const Hero = () => {
                     <img src="img/hero/shape.webp" alt="shape" />
                     <h3>Sobre mí</h3>
                     <p>
-                      Hola, mi nombre es Jhorman, soy un desarrollador frontend con experiencia en React. Me apasiona crear interfaces de usuario atractivas y funcionales, y siempre estoy buscando nuevas formas de mejorar mis habilidades y conocimientos en el desarrollo web.
+                      Hola, mi nombre es Jhorman, soy un desarrollador frontend con experiencia en React. 
+                      Me apasiona crear interfaces de usuario atractivas y funcionales, 
+                      y siempre estoy buscando nuevas formas de mejorar mis habilidades y 
+                      conocimientos en el desarrollo web.
                     </p>
                   </div>
                   <div className="info_list">
                     <img src="img/hero/shape.webp" alt="shape" />
                     <h3>Lo que hago</h3>
                     <p>
-                      Diseño de sitios web y logotipos / Diseño de aplicaciones móviles /
-                      Diseño UI/UX para móviles / Desarrollo web / Identidad de marca
+                      Diseño y desarrollo sitios web y aplicaciones móviles utilizando React, React-Native,
+                      Wordpress y otras tecnologías web. Me especializo en crear interfaces de usuario atractivas y funcionales.
                     </p>
                   </div>
                 </div>

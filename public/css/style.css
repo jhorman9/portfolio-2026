@@ -2250,6 +2250,10 @@ img {
   max-height: 650px;
   border-radius: 40px;
 }
+.nicolas_sm_service_details .service_details_in .image img.image-contain {
+  object-fit: cover;
+  object-position: top;
+}
 .nicolas_sm_service_details .service_details_in .image {
   position: relative;
   margin-bottom: 53px;
@@ -2476,6 +2480,9 @@ img {
   border-radius: 6px;
   padding: 10px 25px;
   margin-top: 5px;
+}
+span.technology-item {
+  color: #111;
 }
 .nicolas_sm_swiper_progress {
   width: 100%;

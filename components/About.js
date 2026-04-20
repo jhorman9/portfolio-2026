@@ -38,7 +38,7 @@ const About = ({
                 <li>
                   <div className="list_inner">
                     <span>Experiencia</span>
-                    <h3>{calculateAge("2020-01-01")} años de experiencia</h3>
+                    <h3>{calculateAge("2022-01-01")} años de experiencia</h3>
                   </div>
                 </li>
                 <li>
@@ -64,37 +64,19 @@ const About = ({
                 <img src="img/about/star.webp" alt={1} />
               </div>
               <div>
-                <h3>50+ proyectos exitosos</h3>
+                <h3>4+ años de experiencia</h3>
               </div>
               <div>
                 <img src="img/about/star.webp" alt={1} />
               </div>
               <div>
-                <h3>50+ clientes satisfechos</h3>
+                <h3>15+ Clientes Satisfechos</h3>
               </div>
               <div>
                 <img src="img/about/star.webp" alt={1} />
               </div>
               <div>
-                <h3>30+ miembros del equipo</h3>
-              </div>
-              <div>
-                <img src="img/about/star.webp" alt={1} />
-              </div>
-              <div>
-                <h3>50+ proyectos exitosos</h3>
-              </div>
-              <div>
-                <img src="img/about/star.webp" alt={1} />
-              </div>
-              <div>
-                <h3>50+ clientes satisfechos</h3>
-              </div>
-              <div>
-                <img src="img/about/star.webp" alt={1} />
-              </div>
-              <div>
-                <h3>30+ team members</h3>
+                <h3>20+ Proyectos Completados</h3>
               </div>
             </div>
           </Marquee>

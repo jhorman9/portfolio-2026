@@ -190,7 +190,7 @@ const ContactForm = () => {
       </ul>
       <div className="nicolas_sm_button">
         <button id="send_message" onSubmit={(e) => onSubmit(e)}>
-          Enviar <img src="img/header/arrow.webp" alt="arrow" />
+          Enviar <img src="/img/header/arrow.webp" alt="arrow" />
         </button>
       </div>
     </form>

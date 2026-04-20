@@ -30,7 +30,7 @@ const Service = ({ title = "Mis servicios", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">I</span>
-                        <h3 className="title">Desarrollo Web</h3>
+                        <h3 className="title">Desarrollo a Medida</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -45,7 +45,7 @@ const Service = ({ title = "Mis servicios", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">II</span>
-                        <h3 className="title">Desarrollo con React</h3>
+                        <h3 className="title">Aplicaciones con React Native</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -60,7 +60,7 @@ const Service = ({ title = "Mis servicios", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">III</span>
-                        <h3 className="title">WordPress a Medida</h3>
+                        <h3 className="title">WordPress Personalizado</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -75,7 +75,7 @@ const Service = ({ title = "Mis servicios", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">IV</span>
-                        <h3 className="title">Ecommerce</h3>
+                        <h3 className="title">Ecommerce y WooCommerce</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
@@ -90,7 +90,7 @@ const Service = ({ title = "Mis servicios", sectionNumber = "03" }) => {
                     <li>
                       <div className="list_inner">
                         <span className="number">V</span>
-                        <h3 className="title">Soporte y Optimización</h3>
+                        <h3 className="title">Soporte y Mantenimiento</h3>
                         <Link
                           className="nicolas_sm_full_link"
                           href="service_single"
