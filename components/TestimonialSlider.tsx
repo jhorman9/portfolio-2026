@@ -1,0 +1,206 @@
+"use client";
+import { sliderProps } from "@/utility";
+import { Component } from "react";
+import Slider from "react-slick";
+
+interface TestimonialSliderProps {
+  title?: string;
+  sectionNumber?: string;
+}
+
+export default class TestimonialSlider extends Component<TestimonialSliderProps> {
+  private slider: Slider | null = null;
+
+  constructor(props: TestimonialSliderProps) {
+    super(props);
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+  }
+  next() {
+    this.slider?.slickNext();
+  }
+  previous() {
+    this.slider?.slickPrev();
+  }
+  render() {
+    return (
+      <div className="nicolas_sm_section">
+        <div className="nicolas_sm_testimonials">
+          <div className="container">
+            <div className="nicolas_sm_main_title">
+              <div className="left">
+                <span>
+                  {this.props.sectionNumber ?? "06"} {"//"} {this.props.title ?? "Satisfied clients"}
+                </span>
+              </div>
+              <div className="center">
+                <p>
+                  Our happy customers give us impactfull and positive feedback
+                  on our services, customer supports &amp; etc.
+                </p>
+              </div>
+              <div className="right">
+                <div className="prev_next">
+                  <a
+                    className="prev "
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.previous();
+                    }}
+                  >
+                    <img className="sm_svg" src="img/svg/arrow.svg" alt="" />
+                  </a>
+                  <a
+                    className="next "
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.next();
+                    }}
+                  >
+                    <img className="sm_svg" src="img/svg/arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="testimonials_in">
+              <Slider
+                ref={(slider) => { this.slider = slider; }}
+                {...sliderProps.testimonial}
+                className=""
+              >
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
+                      <p>
+                        Duis aute irure dolor in velit esse dolore eu fugiat
+                        nulla pariatur. excepteur cupidatats non proident, sunt
+                        in culpa qui deserunt a mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/1.jpg" alt="" />
+                      </div>
+                      <div className="job">
+                        <h3>Jonas Morgan</h3>
+                        <span>Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
+                      <p>
+                        Duis aute irure dolor in velit esse dolore eu fugiat
+                        nulla pariatur. excepteur cupidatats non proident, sunt
+                        in culpa qui deserunt a mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/2.jpg" alt="" />
+                      </div>
+                      <div className="job">
+                        <h3>Nicolas Jhon</h3>
+                        <span>Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
+                      <p>
+                        Duis aute irure dolor in velit esse dolore eu fugiat
+                        nulla pariatur. excepteur cupidatats non proident, sunt
+                        in culpa qui deserunt a mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/3.jpg" alt="" />
+                      </div>
+                      <div className="job">
+                        <h3>Jhonson Smith</h3>
+                        <span>Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
+                      <p>
+                        Duis aute irure dolor in velit esse dolore eu fugiat
+                        nulla pariatur. excepteur cupidatats non proident, sunt
+                        in culpa qui deserunt a mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/1.jpg" alt="" />
+                      </div>
+                      <div className="job">
+                        <h3>Jonas Morgan</h3>
+                        <span>Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
+                      <p>
+                        Duis aute irure dolor in velit esse dolore eu fugiat
+                        nulla pariatur. excepteur cupidatats non proident, sunt
+                        in culpa qui deserunt a mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/2.jpg" alt="" />
+                      </div>
+                      <div className="job">
+                        <h3>Nicolas Jhon</h3>
+                        <span>Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="list_inner">
+                    <div className="details">
+                      <img className="sm_svg" src="img/svg/quote.svg" alt="" />
+                      <p>
+                        Duis aute irure dolor in velit esse dolore eu fugiat
+                        nulla pariatur. excepteur cupidatats non proident, sunt
+                        in culpa qui deserunt a mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <div className="info">
+                      <div className="image">
+                        <img src="img/testimonials/3.jpg" alt="" />
+                      </div>
+                      <div className="job">
+                        <h3>Jhonson Smith</h3>
+                        <span>Web Developer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
