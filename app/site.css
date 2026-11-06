@@ -73,8 +73,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .brand-track { display: flex; width: max-content; animation: brands-scroll 30s linear infinite; }
 .brand-window:hover .brand-track { animation-play-state: paused; }
 .brand-set { flex: none; display: flex; align-items: center; }
-.brand-item { width: clamp(160px, 18vw, 235px); min-height: 40px; padding: 0 20px; display: grid; place-items: center; color: var(--site-text); font-size: 15px; font-weight: 800; letter-spacing: -.025em; text-align: center; }
-.brand-item img { width: 72px; height: 72px; object-fit: contain; }
+.brand-item { width: clamp(150px, 18vw, 180px); min-height: 40px; padding: 0 20px; display: grid; place-items: center; color: var(--site-text); font-size: 15px; font-weight: 800; letter-spacing: -.025em; text-align: center; }
+.brand-item img { width: 72px; height: 72px; object-fit: contain; border-radius: 50%;}
 @keyframes brands-scroll { to { transform: translateX(-50%); } }
 .site-section { padding: clamp(90px, 10vw, 150px) 0; }
 .section-dark { background: var(--site-bg); }
