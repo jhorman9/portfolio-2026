@@ -60,9 +60,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-description { max-width: 590px; color: var(--site-muted); font-size: clamp(17px, 1.45vw, 20px); line-height: 1.65; margin: 36px 0 29px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-foot { display: flex; flex-wrap: wrap; gap: 10px 28px; border-top: 1px solid var(--site-border); margin-top: 64px; padding-top: 18px; color: var(--site-muted); font-size: 12px; }
-.hero-visual { position: relative; height: clamp(370px, 42vw, 560px); background: var(--site-surface); border: 1px solid var(--site-border); border-radius: 170px 170px 16px 16px; overflow: hidden; }
-.hero-visual-ring { position: absolute; width: 110%; aspect-ratio: 1; border: 1px solid rgba(217,250,108,.3); border-radius: 50%; left: -5%; top: 8%; }
-.hero-portrait { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; z-index: 1; }
+.hero-visual { position: relative; isolation: isolate; height: clamp(370px, 42vw, 560px); overflow: visible; }
+.hero-visual::before { content: ""; position: absolute; inset: 0; border: 1px solid var(--site-border); border-radius: 45% 45% 16px 16px / 34% 34% 16px 16px; background: radial-gradient(ellipse at 50% 79%, rgba(217,250,108,.09), transparent 53%), linear-gradient(145deg, rgba(255,255,255,.025), transparent 55%), var(--site-surface); }
+.hero-visual::after { content: ""; position: absolute; left: 15%; right: 15%; bottom: 6%; height: 8%; border-radius: 50%; background: radial-gradient(ellipse, rgba(217,250,108,.23), transparent 70%); filter: blur(10px); }
+.hero-visual-ring { position: absolute; inset: 8% 5% 7%; border: 1px solid rgba(217,250,108,.22); border-radius: 50%; }
+.hero-banner-image { position: absolute; top: 5%; left: -12%; width: 124%; max-width: none; height: 90%; object-fit: contain; z-index: 1; animation: hero-float 6s ease-in-out infinite; }
+@keyframes hero-float { 0%, 100% { transform: translateY(8px); } 50% { transform: translateY(-8px); } }
 .hero-visual-label { position: absolute; bottom: 16px; left: 20px; z-index: 2; color: var(--site-accent); font-size: 11px; letter-spacing: .15em; }
 .brand-band { padding: 26px 0 30px; border-block: 1px solid var(--site-border); background: var(--site-surface); overflow: hidden; }
 .brand-heading { margin: 0 0 20px; color: var(--site-muted); text-align: center; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
@@ -420,7 +423,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .site-nav-cta { margin-top: 15px; }
   .hero-grid { grid-template-columns: 1fr; padding-block: 75px 40px; }
   .site-hero h1 { white-space: normal; font-size: clamp(48px, 9vw, 76px); }
-  .hero-visual { width: min(100%, 430px); height: 410px; margin: 30px auto 0; }
+  .hero-visual { width: min(88%, 430px); height: 410px; margin: 30px auto 0; }
   .hero-foot { margin-top: 45px; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 50px; }
   .contact-page-hero-grid { grid-template-columns: 1fr; gap: 30px; margin-bottom: 70px; }
@@ -535,5 +538,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .brand-track { animation: none; }
+  .hero-banner-image { animation: none; }
   .site-section > .site-container { animation: none; }
 }
