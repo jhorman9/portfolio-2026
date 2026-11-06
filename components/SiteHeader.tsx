@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { servicePages } from "@/data/servicePages";
 
 const navigation = [
   { label: "Inicio", href: "/#home" },
   { label: "Proyectos", href: "/portfolio" },
+  { label: "Blog", href: "/blog" },
   { label: "Sobre mí", href: "/about" },
-  { label: "Contacto", href: "/#contact" },
+  { label: "Contacto", href: "/contact" },
 ];
 
 export default function SiteHeader() {
@@ -31,7 +33,9 @@ export default function SiteHeader() {
   return (
     <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="site-container site-header-inner">
-        <Link className="site-logo" href="/#home" aria-label="Jhorman, inicio" onClick={closeMenu}>jhorman<span>.</span></Link>
+        <Link className="site-logo" href="/#home" aria-label="Jhorman Nieto, inicio" onClick={closeMenu}>
+          <Image src="/img/jhorman-nieto-logo.svg" alt="" width={60} height={60} loading="eager" unoptimized />
+        </Link>
         <button
           className="site-menu-toggle"
           type="button"
@@ -63,7 +67,7 @@ export default function SiteHeader() {
             </div>
           </div>
           {navigation.slice(1).map((item) => <Link href={item.href} key={item.label} onClick={closeMenu}>{item.label}</Link>)}
-          <Link className="button button-primary site-nav-cta" href="/#contact" onClick={closeMenu}>Hablemos <span aria-hidden="true">↗</span></Link>
+          <Link className="button button-primary site-nav-cta" href="/contact" onClick={closeMenu}>Hablemos <span aria-hidden="true">↗</span></Link>
         </nav>
       </div>
     </header>

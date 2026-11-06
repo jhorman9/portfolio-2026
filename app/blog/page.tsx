@@ -1,354 +1,65 @@
-"use client";
-import MarqueeTitle from "@/components/MarqueeTitle";
-import NikolasLayout from "@/layouts/NikolasLayout";
-import { nicolasUtility } from "@/utility";
-import { sliderProps } from "@/utility";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { useEffect } from "react";
-import Slider from "react-slick";
-const Page = () => {
-  useEffect(() => {
-    nicolasUtility.dataImage();
-  }, []);
+import SiteHeader from "@/components/SiteHeader";
+import SiteContact from "@/components/SiteContact";
+import { getBlogPosts } from "@/lib/blog";
+
+export const metadata: Metadata = {
+  title: "Blog sobre desarrollo web y marketing digital en Panamá | Jhorman Nieto",
+  description: "Guías prácticas para negocios en Panamá sobre ecommerce, Meta Ads, SEO, búsqueda con IA y experiencias digitales.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Ideas digitales para negocios en Panamá | Jhorman Nieto",
+    description: "Artículos sobre desarrollo web, marketing digital y visibilidad en buscadores.",
+    url: "/blog",
+    type: "website",
+  },
+};
+
+const formatDate = (value: string) =>
+  new Intl.DateTimeFormat("es-PA", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${value}T12:00:00Z`));
+
+export default function BlogPage() {
+  const posts = getBlogPosts();
 
   return (
-    <NikolasLayout>
-      {/* Page_title */}
-      <div className="nicolas_sm_page_title">
-        <div className="container">
-          <div className="page_title_in">
-            <h3>
-              <span className="stroke_text">User </span>
-              <span className="underline">
-                interface <br />
-                design{" "}
-              </span>
-              <span className="stroke_text">growth tips and </span>
-              <span className="underline">trends</span>
-            </h3>
+    <>
+      <SiteHeader />
+      <main className="blog-page">
+        <header className="blog-page-hero">
+          <div className="site-container">
+            <p className="section-kicker">BLOG / JHORMAN NIETO</p>
+            <div className="blog-page-hero-grid">
+              <h1>Ideas que ayudan a <span>decidir mejor.</span></h1>
+              <p>Desarrollo, marketing y creatividad digital explicados desde las preguntas reales de los negocios en Panamá.</p>
+            </div>
+            <div className="blog-page-hero-foot"><span>DEVELOPMENT · MARKETING · CREATIVE</span><span>GUÍAS PARA PANAMÁ</span></div>
           </div>
-        </div>
-      </div>
-      {/* /Page_title */}
-      {/* Blog_menu */}
-      <div className="nicolas_sm_blog_menu">
-        <div className="container">
-          <div className="extra_container">
-            <div className="menu">
-              <ul>
-                <li>
-                  <a href="#">All</a>
-                </li>
-                <li>
-                  <a href="#">Business</a>
-                </li>
-                <li>
-                  <a href="#">Creative</a>
-                </li>
-                <li>
-                  <a href="#">Design</a>
-                </li>
-                <li>
-                  <a href="#">Lifestyle</a>
-                </li>
-                <li>
-                  <a href="#">Development</a>
-                </li>
-              </ul>
-              <div className="search">
-                <input type="text" placeholder="Search in blog" />
-                <input type="submit" defaultValue="" />
-                <img className="sm_svg" src="img/svg/search.svg" alt="" />
-              </div>
+        </header>
+
+        <section className="site-section blog-list-section" aria-labelledby="blog-list-title">
+          <div className="site-container">
+            <div className="blog-list-heading">
+              <div><p className="section-kicker">LECTURAS / {String(posts.length).padStart(2, "0")}</p><h2 id="blog-list-title">Artículos recientes.</h2></div>
+              <p>Respuestas concretas para planear tu próximo paso digital.</p>
+            </div>
+            <div className="blog-card-grid">
+              {posts.map((post, index) => (
+                <article className="blog-card" key={post.slug}>
+                  <div className="blog-card-top"><span>{post.category}</span><span>{String(index + 1).padStart(2, "0")} / {String(posts.length).padStart(2, "0")}</span></div>
+                  <div className="blog-card-content">
+                    <p className="blog-card-date"><time dateTime={post.published}>{formatDate(post.published)}</time><span aria-hidden="true">·</span>{post.readingMinutes} min de lectura</p>
+                    <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
+                    <p>{post.description}</p>
+                  </div>
+                  <Link className="blog-card-link" href={`/blog/${post.slug}`} aria-label={`Leer: ${post.title}`}>Leer artículo <span aria-hidden="true">↗</span></Link>
+                </article>
+              ))}
             </div>
           </div>
-        </div>
-      </div>
-      {/* /Blog_menu */}
-      {/* Hero_blog */}
-      <div className="nicolas_sm_blog_hero">
-        <div className="container">
-          <div className="extra_container">
-            <Slider {...sliderProps.blogHeroSlider} className="blog_slider">
-              <div className="blog_hero_in">
-                <div className="background">
-                  <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-bg-img="img/blog/4.jpg" />
-                </div>
-                <div className="news">
-                  <span>January 26, 2024</span>
-                  <h3>
-                    <Link href="blog_details">
-                      Digital and physical brand design
-                    </Link>
-                  </h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                </div>
-                <div className="slider_navigation">
-                  <div className="nav_icon active">
-                    <a href="#" />
-                  </div>
-                  <div className="nav_icon">
-                    <a href="#" />
-                  </div>
-                  <div className="nav_icon">
-                    <a href="#" />
-                  </div>
-                </div>
-              </div>
-              <div className="blog_hero_in">
-                <div className="background">
-                  <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-bg-img="img/blog/8.jpg" />
-                </div>
-                <div className="news">
-                  <span>January 05, 2024</span>
-                  <h3>
-                    <Link href="blog_details">How to develop website</Link>
-                  </h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                </div>
-                <div className="slider_navigation">
-                  <div className="nav_icon active">
-                    <a href="#" />
-                  </div>
-                  <div className="nav_icon">
-                    <a href="#" />
-                  </div>
-                  <div className="nav_icon">
-                    <a href="#" />
-                  </div>
-                </div>
-              </div>
-              <div className="blog_hero_in">
-                <div className="background">
-                  <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-bg-img="img/blog/9.jpg" />
-                </div>
-                <div className="news">
-                  <span>January 03, 2024</span>
-                  <h3>
-                    <Link href="blog_details">
-                      The secrets of graphic design
-                    </Link>
-                  </h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                </div>
-                <div className="slider_navigation">
-                  <div className="nav_icon active">
-                    <a href="#" />
-                  </div>
-                  <div className="nav_icon">
-                    <a href="#" />
-                  </div>
-                  <div className="nav_icon">
-                    <a href="#" />
-                  </div>
-                </div>
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </div>
-      {/* /Hero_blog */}
-      {/* Blog */}
-      <div className="nicolas_sm_blog no_padding blogpage">
-        <div className="nicolas_sm_extra_title">
-          <MarqueeTitle marqueeText="News" />
-        </div>
-        <div className="container">
-          <div className="extra_container">
-            <ul>
-              <li>
-                <div className="list_inner">
-                  <div className="left">
-                    <div className="news">
-                      <span>January 26, 2024</span>
-                      <h3>
-                        <Link href="blog_details">
-                          Digital and physical brand design
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="button">
-                      <Link href="blog_details">
-                        Read the story{" "}
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="right">
-                    <div className="image">
-                      <img src="img/blog/1.jpg" alt="" />
-                      <Link
-                        className="nicolas_sm_full_link"
-                        href="blog_details"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="left">
-                    <div className="news">
-                      <span>January 26, 2024</span>
-                      <h3>
-                        <Link href="blog_details">
-                          The transformation of mobile app designing
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="button">
-                      <Link href="blog_details">
-                        Read the story{" "}
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="right">
-                    <div className="image">
-                      <img src="img/blog/2.jpg" alt="" />
-                      <Link
-                        className="nicolas_sm_full_link"
-                        href="blog_details"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="left">
-                    <div className="news">
-                      <span>January 26, 2024</span>
-                      <h3>
-                        <Link href="blog_details">
-                          A beginner’s guide to running adventures
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="button">
-                      <Link href="blog_details">
-                        Read the story{" "}
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="right">
-                    <div className="image">
-                      <img src="img/blog/3.jpg" alt="" />
-                      <Link
-                        className="nicolas_sm_full_link"
-                        href="blog_details"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="left">
-                    <div className="news">
-                      <span>January 26, 2024</span>
-                      <h3>
-                        <Link href="blog_details">
-                          A beginner’s guide to running adventures
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="button">
-                      <Link href="blog_details">
-                        Read the story{" "}
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="right">
-                    <div className="image">
-                      <img src="img/blog/5.jpg" alt="" />
-                      <Link
-                        className="nicolas_sm_full_link"
-                        href="blog_details"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="list_inner">
-                  <div className="left">
-                    <div className="news">
-                      <span>January 26, 2024</span>
-                      <h3>
-                        <Link href="blog_details">
-                          A beginner’s guide to running adventures
-                        </Link>
-                      </h3>
-                    </div>
-                    <div className="button">
-                      <Link href="blog_details">
-                        Read the story{" "}
-                        <img
-                          className="sm_svg"
-                          src="img/svg/down_arrow.svg"
-                          alt=""
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="right">
-                    <div className="image">
-                      <img src="img/blog/6.jpg" alt="" />
-                      <Link
-                        className="nicolas_sm_full_link"
-                        href="blog_details"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <div className="nicolas_sm_button">
-              <a href="#">
-                More{" "}
-                <img
-                  className="sm_svg"
-                  src="img/svg/down_arrow.svg"
-                  alt="arrow"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* /Blog */}
-    </NikolasLayout>
+        </section>
+        <SiteContact />
+      </main>
+    </>
   );
-};
-export default Page;
+}

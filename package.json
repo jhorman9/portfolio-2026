@@ -11,12 +11,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "emailjs-com": "^3.2.0",
+    "axios": "^1.21.0",
+    "gray-matter": "^4.0.3",
     "next": "16.4.3",
     "react": "19.3.1",
     "react-countup": "^6.5.0",
     "react-dom": "19.3.1",
     "react-fast-marquee": "^1.6.4",
+    "react-hook-form": "^7.91.0",
+    "react-markdown": "^10.1.0",
     "react-player": "^2.15.1",
     "react-slick": "^0.30.2",
     "react-visibility-sensor": "^5.1.1",

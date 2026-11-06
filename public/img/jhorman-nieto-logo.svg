@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 307 84" role="img" aria-labelledby="title desc">
+  <title id="title">Jhorman Nieto — Digital Solutions</title>
+  <desc id="desc">Logotipo verde lima y blanco sobre fondo transparente, con símbolo geométrico de código y subtítulo Digital Solutions.</desc>
+  <!-- Fondo transparente: no se dibuja ningún rectángulo de fondo. -->
+  <g id="simbolo" fill="#d9fa6c">
+    <!-- Chevron izquierdo compuesto de dos piezas -->
+    <path d="M30 24.3 54.5 10.8 54.5 21.3 42.1 28.1 54.6 35.5 54.6 46.7 30 33.1 30 28.8 51.9 41.1 51.9 36.6Z"/>
+    <!-- Chevron derecho compuesto de dos piezas -->
+    <path d="M58.3 24.7 83.1 38.8 83.1 43.7 61.2 31.4 61.2 34.4 83.2 46.5 58.3 61.1 58.3 50.4 70.8 43.5 58.3 36.5Z"/>
+  </g>
+</svg>

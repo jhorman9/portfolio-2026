@@ -60,10 +60,10 @@ const Page = () => {
                 <li>
                   <div className="list_inner">
                     <img className="sm_svg" src="img/anchor.svg" alt="" />
-                    <h3>Contact Form With EmailJS</h3>
+                    <h3>Contact Form With FormSubmit</h3>
                     <p>
-                      We used the latest modern Working SMTP Contact Form with
-                      Captcha for our form field
+                      Contact form delivery through FormSubmit without SMTP,
+                      with browser validation and spam protection.
                     </p>
                   </div>
                 </li>
