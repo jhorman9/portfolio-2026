@@ -510,7 +510,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-actions .button { width: 100%; }
   .hero-visual { height: 330px; }
   .about-photo { min-height: 410px; }
-  .brand-item { width: 170px; }
+  .brand-item { width: 112px; }
   .related-projects > div { grid-template-columns: 1fr; }
   .experience-list li { grid-template-columns: 1fr; gap: 5px; }
   .experience-list time { text-align: left; }
