@@ -6,5 +6,5 @@ function BrandList({ decorative = false }) {
 }
 
 export default function BrandMarquee() {
-  return <section className="brand-band" aria-label="Marcas con las que he trabajado"><div className="site-container"><h2 className="brand-heading">Marcas con las que he trabajado</h2></div><div className="brand-window"><div className="brand-track"><BrandList /><BrandList decorative /></div></div></section>;
+  return <section className="brand-band" aria-label="Marcas con las que he trabajado"><div className="site-container"><h2 className="brand-heading">Marcas con las que he trabajado</h2></div><div className="brand-window"><div className="brand-track"><BrandList /><BrandList decorative /><BrandList decorative /><BrandList decorative /></div></div></section>;
 }
