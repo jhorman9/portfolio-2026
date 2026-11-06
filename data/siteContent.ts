@@ -1,13 +1,13 @@
 import type { Brand, ExperienceEntry, Service, ToolGroup } from "@/types";
 
-// Añadir aquí las rutas a los archivos de logotipo oficiales cuando estén disponibles.
 export const brands: Brand[] = [
-  { name: "The Color Bar Salon", logo: null, expectedLogoPath: "/img/brands/the-color-bar-salon.svg" },
-  { name: "Cocolpan", logo: null, expectedLogoPath: "/img/brands/cocolpan.svg" },
-  { name: "AzumiPTY", logo: null, expectedLogoPath: "/img/brands/azumipty.svg" },
-  { name: "Divino Pekado", logo: null, expectedLogoPath: "/img/brands/divino-pekado.svg" },
-  { name: "Utah Mechanical School", logo: null, expectedLogoPath: "/img/brands/utah-mechanical-school.svg" },
-  { name: "Aikikaird", logo: null, expectedLogoPath: "/img/brands/aikikaird.svg" },
+  { name: "The Color Bar Salon", logo: "/img/logo-aliados/the color bar salon panama.jpg" },
+  { name: "Cocolpan", logo: "/img/logo-aliados/cocolpan panama.jpg" },
+  { name: "Azumi Panamá", logo: "/img/logo-aliados/azumi panama.jpg" },
+  { name: "Divino Pekado", logo: "/img/logo-aliados/divino pekado.jpg" },
+  { name: "Utah Mechanical School", logo: "/img/logo-aliados/utah mechanical school estados unidos.jpg" },
+  { name: "Aikikaird", logo: "/img/logo-aliados/aikikaird republica dominicana.jpg" },
+  { name: "Web Innovator Studio", logo: "/img/logo-aliados/web innovator studio panama.jpg" },
 ];
 
 export const services: Service[] = [

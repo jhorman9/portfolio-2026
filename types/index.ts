@@ -18,8 +18,7 @@ export interface PortfolioProject {
 
 export interface Brand {
   name: string;
-  logo: string | null;
-  expectedLogoPath: string;
+  logo: string;
 }
 
 export interface Service {

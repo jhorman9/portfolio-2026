@@ -2,7 +2,7 @@ import Image from "next/image";
 import { brands } from "@/data";
 
 function BrandList({ decorative = false }) {
-  return <div className="brand-set" aria-hidden={decorative}>{brands.map((brand) => <div className="brand-item" key={brand.name}>{brand.logo ? <Image src={brand.logo} alt={decorative ? "" : brand.name} width={160} height={54} /> : <span>{brand.name}</span>}</div>)}</div>;
+  return <div className="brand-set" aria-hidden={decorative}>{brands.map((brand) => <div className="brand-item" key={brand.name}><Image src={brand.logo} alt={decorative ? "" : `Logo de ${brand.name}`} width={300} height={300} sizes="72px" /></div>)}</div>;
 }
 
 export default function BrandMarquee() {
