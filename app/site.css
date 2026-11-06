@@ -55,7 +55,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .eyebrow, .section-kicker { color: var(--site-accent); font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 11px; margin-bottom: 29px; }
 .status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--site-accent); box-shadow: 0 0 0 5px rgba(217,250,108,.12); }
-.site-hero h1 { max-width: 950px; margin: 0; color: var(--site-text); font-size: clamp(56px, 7vw, 112px); line-height: .99; font-weight: 800; letter-spacing: -.075em; white-space: nowrap; }
+.site-hero h1 { max-width: 950px; margin: 0; color: var(--site-text); font-size: clamp(56px, 7vw, 90px); line-height: .99; font-weight: 800; letter-spacing: -.075em; white-space: nowrap; }
 .site-hero h1 span { color: var(--site-accent); }
 .hero-description { max-width: 590px; color: var(--site-muted); font-size: clamp(17px, 1.45vw, 20px); line-height: 1.65; margin: 36px 0 29px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -170,7 +170,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .contact-page-hero *, .contact-page-hero *::before, .contact-page-hero *::after { box-sizing: border-box; }
 .contact-page-hero a { text-decoration: none; }
 .contact-page-hero-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(275px, .6fr); align-items: end; gap: clamp(40px, 7vw, 110px); margin: 25px 0 clamp(80px, 9vw, 130px); }
-.contact-page-hero h1 { margin: 0; font-size: clamp(56px, 7.5vw, 112px); line-height: .99; letter-spacing: -.075em; }
+.contact-page-hero h1 { margin: 0; font-size: clamp(56px, 7.5vw, 90px); line-height: .99; letter-spacing: -.075em; }
 .contact-page-hero h1 span { color: var(--site-accent); }
 .contact-page-hero-aside { padding-bottom: 6px; }
 .contact-page-hero-aside p { max-width: 420px; margin: 0 0 28px; color: var(--site-muted); font-size: clamp(17px, 1.5vw, 20px); line-height: 1.65; }
