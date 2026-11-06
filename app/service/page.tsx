@@ -24,7 +24,7 @@ export default function ServicesPage() {
   return (
     <>
       <SiteHeader />
-      <main className="services-page">
+      <main id="main-content" tabIndex={-1} className="services-page">
         <section className="services-page-hero" aria-labelledby="services-page-title">
           <div className="site-container">
             <p className="section-kicker">SERVICIOS / DEVELOPMENT · MARKETING · CREATIVE</p>

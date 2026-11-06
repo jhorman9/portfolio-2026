@@ -25,7 +25,7 @@ export default function BlogPage() {
   return (
     <>
       <SiteHeader />
-      <main className="blog-page">
+      <main id="main-content" tabIndex={-1} className="blog-page">
         <header className="blog-page-hero">
           <div className="site-container">
             <p className="section-kicker">BLOG / JHORMAN NIETO</p>

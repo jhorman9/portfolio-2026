@@ -17,7 +17,7 @@ export default function ContactPage() {
   return (
     <>
       <SiteHeader />
-      <main className="contact-page">
+      <main id="main-content" tabIndex={-1} className="contact-page">
         <section className="contact-page-hero" aria-labelledby="contact-page-title">
           <div className="site-container">
             <p className="section-kicker">CONTACTO / JHORMAN NIETO</p>

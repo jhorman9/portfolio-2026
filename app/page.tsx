@@ -9,5 +9,5 @@ import Tools from "@/components/Tools";
 import SiteContact from "@/components/SiteContact";
 
 export default function Home() {
-  return <><SiteHeader /><main><Hero /><BrandMarquee /><Service /><Portfolio /><About /><Experience /><Tools /><SiteContact /></main></>;
+  return <><SiteHeader /><main id="main-content" tabIndex={-1}><Hero /><BrandMarquee /><Service /><Portfolio /><About /><Experience /><Tools /><SiteContact /></main></>;
 }

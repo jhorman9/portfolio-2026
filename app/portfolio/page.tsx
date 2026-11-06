@@ -20,7 +20,7 @@ export default function PortfolioPage() {
   return (
     <>
       <SiteHeader />
-      <main className="portfolio-page">
+      <main id="main-content" tabIndex={-1} className="portfolio-page">
         <section className="portfolio-page-hero" aria-labelledby="portfolio-page-title">
           <div className="site-container">
             <p className="section-kicker">PORTAFOLIO / TRABAJO SELECCIONADO</p>

@@ -34,7 +34,7 @@ export default function SiteHeader() {
     <header className={`site-header${scrolled ? " is-scrolled" : ""}`}>
       <div className="site-container site-header-inner">
         <Link className="site-logo" href="/#home" aria-label="Jhorman Nieto, inicio" onClick={closeMenu}>
-          <Image src="/img/jhorman-nieto-logo.svg" alt="" width={60} height={60} loading="eager" unoptimized />
+          <Image src="/img/jhorman-nieto-logo.svg" alt="" width={307} height={84} loading="eager" unoptimized />
         </Link>
         <button
           className="site-menu-toggle"

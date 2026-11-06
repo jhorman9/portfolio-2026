@@ -40,10 +40,18 @@ const pillars = [
 ];
 
 export default function AboutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://jhorman.com/about#profile",
+    url: "https://jhorman.com/about",
+    mainEntity: { "@id": "https://jhorman.com/#person" },
+  };
   return (
     <>
       <SiteHeader />
-      <main className="about-page">
+      <main id="main-content" tabIndex={-1} className="about-page">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
         <section className="about-page-hero" aria-labelledby="about-page-title">
           <div className="site-container about-page-hero-grid">
             <div className="about-page-hero-copy">
@@ -57,7 +65,7 @@ export default function AboutPage() {
               <p className="about-page-signature">Digital Solutions Specialist <span aria-hidden="true">/</span> Ciudad de Panamá</p>
             </div>
             <div className="about-page-portrait">
-              <Image src="/img/hero/jhorman-nieto.png" alt="Retrato de Jhorman Nieto" fill priority sizes="(max-width: 800px) 100vw, 40vw" />
+              <Image src="/img/hero/jhorman-nieto.png" alt="Retrato de Jhorman Nieto" width={1130} height={1334} priority sizes="(max-width: 800px) 100vw, 40vw" />
               <span aria-hidden="true">JN / 2026</span>
             </div>
           </div>

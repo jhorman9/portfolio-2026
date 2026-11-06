@@ -10,6 +10,6 @@ export default function Hero() {
       <div className="hero-actions"><Link className="button button-primary" href="#portfolio">Explorar proyectos <span aria-hidden="true">↗</span></Link><Link className="button button-outline" href="#service">Descubrir servicios <span aria-hidden="true">↗</span></Link></div>
       <div className="hero-foot"><span>Jhorman Nieto — Digital Solutions Specialist</span><span>Development · Marketing · Creative</span></div>
     </div>
-    <div className="hero-visual" aria-hidden="true"><div className="hero-visual-ring" /><Image src="/img/hero/jhorman-nieto.png" alt="" fill priority sizes="(max-width: 900px) 80vw, 36vw" className="hero-portrait" /><span className="hero-visual-label">JN / 01</span></div>
+    <div className="hero-visual" aria-hidden="true"><div className="hero-visual-ring" /><Image src="/img/hero/jhorman-nieto.png" alt="" width={1130} height={1334} priority sizes="(max-width: 900px) 80vw, 36vw" className="hero-portrait" /><span className="hero-visual-label">JN / 01</span></div>
   </div></section>;
 }

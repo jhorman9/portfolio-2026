@@ -7,7 +7,8 @@ import { portfolioData } from "@/data";
 
 const filters = ["Todos", "Desarrollo", "Marketing", "Fotografía", "Video"] as const;
 type ProjectFilter = (typeof filters)[number];
-const pageSize = 3;
+// Show every project in the initial HTML so search engines and agents can follow each link.
+const pageSize = portfolioData.length;
 
 export default function Portfolio({ limit = null }: { limit?: number | null }) {
   const [filter, setFilter] = useState<ProjectFilter>("Todos");
@@ -79,7 +80,8 @@ export default function Portfolio({ limit = null }: { limit?: number | null }) {
                   <Image
                     src={`/${project.image.replace(/^\//, "")}`}
                     alt={project.title}
-                    fill
+                    width={750}
+                    height={450}
                     sizes="(max-width: 850px) 100vw, 42vw"
                   />
                 </Link>

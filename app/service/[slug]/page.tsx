@@ -30,11 +30,23 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   const service = getServiceBySlug(slug);
   if (!service) notFound();
   const related = service.related.map(getServiceBySlug).filter((item) => item !== undefined);
+  const url = `https://jhorman.com/service/${service.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: service.title,
+    description: service.summary,
+    url,
+    provider: { "@id": "https://jhorman.com/#person" },
+    areaServed: { "@type": "Country", name: "Panamá" },
+  };
 
   return (
     <>
       <SiteHeader />
-      <main className="service-detail-page">
+      <main id="main-content" tabIndex={-1} className="service-detail-page">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
         <article>
           <header className="service-detail-hero">
             <div className="site-container">

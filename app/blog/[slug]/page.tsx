@@ -53,14 +53,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     inLanguage: "es-PA",
     datePublished: post.published,
     dateModified: post.updated ?? post.published,
-    author: { "@type": "Person", name: "Jhorman Nieto", url: "https://jhorman.com/about" },
-    publisher: { "@type": "Person", name: "Jhorman Nieto", url: "https://jhorman.com/about" },
+    author: { "@id": "https://jhorman.com/#person" },
+    publisher: { "@id": "https://jhorman.com/#person" },
   };
 
   return (
     <>
       <SiteHeader />
-      <main className="blog-post-page">
+      <main id="main-content" tabIndex={-1} className="blog-post-page">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
         <article>
           <header className="blog-post-hero">
