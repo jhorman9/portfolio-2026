@@ -8,7 +8,8 @@ import "./site.css";
 
 export const metadata: Metadata = {
   title: "Jhorman Nieto | Desarrollo web y marketing digital en Panamá",
-  description: "Jhorman Nieto, Digital Solutions Specialist en Panamá. Desarrollo web y aplicaciones, marketing digital, fotografía, video y contenido creativo.",
+  description:
+    "Jhorman Nieto, Digital Solutions Specialist en Panamá. Desarrollo web y aplicaciones, marketing digital, fotografía, video y contenido creativo.",
   metadataBase: new URL("https://jhorman.com"),
   alternates: { canonical: "/" },
   applicationName: "Jhorman Nieto",
@@ -17,13 +18,20 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     title: "Jhorman Nieto | Desarrollo web y marketing digital en Panamá",
-    description: "Development · Marketing · Creative. Soluciones digitales desde Panamá.",
+    description:
+      "Development · Marketing · Creative. Soluciones digitales desde Panamá.",
     url: "https://jhorman.com",
     siteName: "Jhorman Nieto",
     locale: "es_PA",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Jhorman Nieto | Desarrollo web y marketing digital en Panamá", description: "Desarrollo web, marketing digital y creatividad desde Panamá.", images: ["/opengraph-image"] },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jhorman Nieto | Desarrollo web y marketing digital en Panamá",
+    description:
+      "Desarrollo web, marketing digital y creatividad desde Panamá.",
+    images: ["/opengraph-image"],
+  },
   keywords: [
     "Jhorman Nieto P",
     "Jhorman Nieto",
@@ -52,9 +60,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     url: "https://jhorman.com/",
     image: "https://jhorman.com/img/hero/jhorman-nieto.png",
     jobTitle: "Desarrollador frontend",
-    description: "Desarrollador frontend en Panamá especializado en experiencias digitales, React y TypeScript.",
+    description:
+      "Desarrollador frontend en Panamá especializado en experiencias digitales, React y TypeScript.",
     homeLocation: { "@type": "Place", name: "Ciudad de Panamá, Panamá" },
-    sameAs: ["https://www.linkedin.com/in/jhormandev", "https://github.com/jhorman9/"],
+    sameAs: [
+      "https://www.linkedin.com/in/jhormandev",
+      "https://github.com/jhorman9/",
+    ],
   };
   const website = {
     "@context": "https://schema.org",
@@ -68,9 +80,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es-PA">
       <body>
-        <a className="skip-link" href="#main-content">Saltar al contenido principal</a>
+        <a className="skip-link" href="#main-content">
+          Saltar al contenido principal
+        </a>
         {children}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([person, website]).replace(/</g, "\\u003c") }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([person, website]).replace(/</g, "\\u003c"),
+          }}
+        />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const faqData = [
@@ -54,7 +55,7 @@ const Faq = ({ limit = 10 }) => {
                   <h3>{item.title}</h3>
                 </div>
                 <div className="arrow">
-                  <img
+                  <Image
                     className="sm_svg"
                     src="img/svg/down_arrow.svg"
                     alt=""

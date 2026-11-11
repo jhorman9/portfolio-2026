@@ -25,6 +25,10 @@ type ContactValues = {
   _honey: string;
 };
 
+type contactResponse = {
+  ok: boolean;
+}
+
 const required = (label: string) => ({
   required: `Ingresa ${label}.`,
   validate: (value: string) => value.trim().length > 0 || `Ingresa ${label}.`,
@@ -43,7 +47,7 @@ export default function ContactForm() {
   const submit = handleSubmit(async (values) => {
     setSent(false);
     try {
-      const response = await axios.post<{ ok: boolean }>("/api/contact", values);
+      const response = await axios.post<contactResponse>("/api/contact", values);
       if (!response.data.ok) throw new Error("No se pudo enviar el mensaje.");
       reset();
       setSent(true);

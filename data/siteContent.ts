@@ -1,13 +1,13 @@
 import type { Brand, ExperienceEntry, Service, ToolGroup } from "@/types";
 
 export const brands: Brand[] = [
-  { name: "The Color Bar Salon", logo: "/img/logo-aliados/the color bar salon panama.jpg" },
-  { name: "Cocolpan", logo: "/img/logo-aliados/cocolpan panama.jpg" },
-  { name: "Azumi Panamá", logo: "/img/logo-aliados/azumi panama.jpg" },
-  { name: "Divino Pekado", logo: "/img/logo-aliados/divino pekado.jpg" },
-  { name: "Utah Mechanical School", logo: "/img/logo-aliados/utah mechanical school estados unidos.jpg" },
-  { name: "Aikikaird", logo: "/img/logo-aliados/aikikaird republica dominicana.jpg" },
-  { name: "Web Innovator Studio", logo: "/img/logo-aliados/web innovator studio panama.jpg" },
+  { name: "The Color Bar Salon", logo: "/img/logo-aliados/the color bar salon panama.jpg", url: "https://www.instagram.com/thecolorbarsalon19/" },
+  { name: "Cocolpan", logo: "/img/logo-aliados/cocolpan panama.jpg", url: "https://cocolpan.com/" },
+  { name: "Azumi Panamá", logo: "/img/logo-aliados/azumi panama.jpg", url: "https://azumipty.com/" },
+  { name: "Divino Pekado", logo: "/img/logo-aliados/divino pekado.jpg", url: "https://www.instagram.com/divinopekado/" },
+  { name: "Utah Mechanical School", logo: "/img/logo-aliados/utah mechanical school estados unidos.jpg", url: "https://utahmechanicalschool.com/" },
+  { name: "Aikikaird", logo: "/img/logo-aliados/aikikaird republica dominicana.jpg", url: "https://aikikaird.org/" },
+  { name: "Web Innovator Studio", logo: "/img/logo-aliados/web innovator studio panama.jpg", url: "https://webinnovatorstudio.com/" },
 ];
 
 export const services: Service[] = [

@@ -19,6 +19,7 @@ export interface PortfolioProject {
 export interface Brand {
   name: string;
   logo: string;
+  url: string;
 }
 
 export interface Service {
