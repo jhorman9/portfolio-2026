@@ -68,6 +68,26 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       "https://github.com/jhorman9/",
     ],
   };
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://jhorman.com/#organization",
+    name: "Jhorman Nieto",
+    url: "https://jhorman.com/",
+    logo: "https://jhorman.com/img/hero/jhorman-nieto.png",
+    image: "https://jhorman.com/img/hero/jhorman-nieto.png",
+    description:
+      "Servicios de desarrollo web, aplicaciones, marketing digital y producción de contenido creativo desde Panamá.",
+    areaServed: {
+      "@type": "Country",
+      name: "Panamá",
+    },
+    founder: { "@id": "https://jhorman.com/#person" },
+    sameAs: [
+      "https://www.linkedin.com/in/jhormandev",
+      "https://github.com/jhorman9/",
+    ],
+  };
   const website = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -75,7 +95,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     name: "Jhorman Nieto",
     url: "https://jhorman.com/",
     inLanguage: "es-PA",
-    publisher: { "@id": "https://jhorman.com/#person" },
+    publisher: { "@id": "https://jhorman.com/#organization" },
   };
   return (
     <html lang="es-PA">
@@ -87,7 +107,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([person, website]).replace(/</g, "\\u003c"),
+            __html: JSON.stringify([person, organization, website]).replace(
+              /</g,
+              "\\u003c",
+            ),
           }}
         />
       </body>

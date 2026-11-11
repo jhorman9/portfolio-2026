@@ -1,0 +1,24 @@
+# Jhorman Nieto
+
+> Sitio profesional de Jhorman Nieto, especialista en soluciones digitales desde Panamá.
+
+## Resumen
+
+Jhorman Nieto ofrece desarrollo web y de aplicaciones, marketing digital, diseño de interfaces, fotografía, video y producción de contenido creativo.
+
+## Páginas principales
+
+- [Inicio](https://jhorman.com/): Presentación, servicios, proyectos y formas de contacto.
+- [Sobre mí](https://jhorman.com/about): Perfil profesional, experiencia y habilidades.
+- [Servicios](https://jhorman.com/service): Servicios de desarrollo web, marketing digital y producción creativa.
+- [Portafolio](https://jhorman.com/portfolio): Proyectos y trabajos seleccionados.
+- [Blog](https://jhorman.com/blog): Artículos y recursos sobre tecnología, diseño y marketing digital.
+- [Contacto](https://jhorman.com/contact): Formulario para solicitar información o iniciar un proyecto.
+
+## Identidad
+
+- Sitio: https://jhorman.com/
+- Autor: Jhorman Nieto
+- Ubicación: Ciudad de Panamá, Panamá
+- LinkedIn: https://www.linkedin.com/in/jhormandev
+- GitHub: https://github.com/jhorman9/
